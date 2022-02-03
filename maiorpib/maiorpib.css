@@ -1,9 +1,9 @@
 body{
-    background-color: #CCC;
+    background-color: #CCCCCC;
     font-family: Arial;
   }
 
-  .credito {
+  .credito{
     font-size: 10px;
     writing-mode: vertical-rl;
     position: absolute;
