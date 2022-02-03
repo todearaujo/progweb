@@ -13,8 +13,8 @@ body{
   
   .conteudo{
     background-color: #ffffff;
-    max-width: 320px;
-    margin: 20px auto;
+    max-width: 600px;
+    margin: 20px;
     padding: 20px;
     position: relative;
   }
