@@ -14,7 +14,7 @@ body{
   .conteudo{
     background-color: #ffffff;
     max-width: 600px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     position: relative;
   }
@@ -32,6 +32,8 @@ body{
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
+    width: 75%;
+    margin: auto;
 }
   
   .barra {
