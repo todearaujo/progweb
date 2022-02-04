@@ -1,6 +1,16 @@
 body{
-    background-color: #CCCCCC;
+    background-color: #EEEEEE;
     font-family: Arial;
+  }
+
+  a {
+    color: #999999;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #0000FF;
+    text-decoration: none;
   }
 
   .credito{
@@ -14,16 +24,42 @@ body{
   .conteudo{
     background-color: #ffffff;
     max-width: 600px;
-    margin: 10px auto;
+    margin: 5px auto;
     padding: 20px;
     position: relative;
+    box-shadow: 10px 10px 20px #cccccc;
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: row-reverse;
+    margin-top: 25px;
+  }
+
+  .botao {
+    padding: 10px;
+    margin-left: 10px;
+    height: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .inativo {
+    color: #0000CC20;
+  }
+
+  .inativo:hover {
+    background-color: #EEEEEE;
   }
   
   .titulo{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px;
+    letter-spacing: -1.5px;
   }
   
   .grafico {
@@ -73,13 +109,13 @@ body{
     height: 62px;
   }
 
-  .animabg{ animation: changeBg 60s infinite;}
+  .animabg{ animation: changeBg 45s infinite;}
 @keyframes changeBg{
-   0%,100%  {background-position: 15% 50%;}
-   20% {background-position: 25% 50%;}
-   40% {background-position: 45% 50%;}
-   60% {background-position: 65% 50%;}
-   80% {background-position: 85% 50%;}
+   0%,100%  {background-position: 10% 50%;}
+   20% {background-position: 30% 50%;}
+   40% {background-position: 60% 50%;}
+   60% {background-position: 70% 50%;}
+   80% {background-position: 80% 50%;}
 }
   
   .fonte {

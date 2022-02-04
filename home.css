@@ -10,10 +10,12 @@ body{
   }
 
   .corpo {
+    background-color: #ffffff;
     max-width: 600px;
-    margin: auto;
-    padding: 10px;
+    margin: 5px auto;
+    padding: 20px;
     position: relative;
+    box-shadow: 10px 10px 20px #999999;
   }
 
   .titulo{
