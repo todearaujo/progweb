@@ -1,0 +1,110 @@
+body{
+  background-color: #EEEEEE;
+  font-family: Arial;
+}
+
+a {
+  color: #999999;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #0000FF;
+  text-decoration: none;
+}
+
+.credito{
+  font-size: 10px;
+  writing-mode: vertical-rl;
+  position: absolute;
+  left: 3px;
+  bottom: 5px;
+}
+
+.conteudo{
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 5px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 10px 10px 20px #cccccc;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row-reverse;
+  margin-top: 25px;
+}
+
+.botao {
+  padding: 10px;
+  margin-left: 10px;
+  height: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.inativo {
+  color: #0000CC20;
+}
+
+.inativo:hover {
+  background-color: #EEEEEE;
+}
+
+.titulo{
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px;
+  letter-spacing: -1.5px;
+}
+
+.grafico {
+  color: #ffffff;
+  font-size: 10px;
+  width: 95%;
+}
+
+.barra {
+  margin: 10px;
+  height: 35px;
+  border: solid 1px black;
+  background-size: cover;
+}
+
+.pais {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.texto {
+  color: black;
+  width: 20px;
+}
+
+.eua {width: 100%;background-position-y: 46%;}
+
+.china {width: calc(100% * (1686/2294));background-position-y: 36%;}
+
+.japao {
+width: calc(100% * (510/2294));background-position-y: 15%;;
+}
+
+.alemanha {
+width: calc(100% * (423/2294));
+}
+
+.reinounido {
+width: calc(100% * (311/2294));
+}
+
+.fonte {
+  text-align: right;
+  font-size: 8px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
