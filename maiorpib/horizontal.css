@@ -131,11 +131,12 @@ a:hover{
   
   .conteudo{
     background-color: #ffffff;
-    width: 95%;
+    width: 75%;
     padding: 20px;
     position: relative;
     box-shadow: 10px 10px 20px #cccccc;
     display: flex;
+    flex-flow: row wrap;
   }
   
   .menu {
@@ -157,7 +158,7 @@ a:hover{
   }
   
   .titulo{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -171,8 +172,9 @@ a:hover{
   .grafico {
     color: #ffffff;
     font-size: 10px;
-    width: 90%;
-    max-height: 65%;
+    width: 85%;
+    display: flex;
+    flex-flow: column-reverse;
   }
   
   .barra {
@@ -186,7 +188,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 15%;
+    height: 12%;
   }
   
   .texto {
@@ -195,22 +197,30 @@ a:hover{
     font-size: 20px;
   }
   
-  .eua {width: 100%;background-position-y: 29%;}
+  .eua {width: 100%;background-position-y: 30%;animation: changeBg 45s infinite;}
   
-  .china {width: calc(100% * (1686/2294));background-position-y: 36%;}
+  .china {width: calc(100% * (1686/2294));background-position-y: 35%;animation: changeBg 45s infinite;}
   
-  .japao {width: calc(100% * (510/2294));background-position-y: 0%;}
+  .japao {width: calc(100% * (510/2294));background-position-y: 0%;animation: changeBg 45s infinite;}
   
-  .alemanha {width: calc(100% * (423/2294));background-position-y: 50%;}
+  .alemanha {width: calc(100% * (423/2294));background-position-y: 50%;animation: changeBg 45s infinite;}
   
-  .reinounido {
-  width: calc(100% * (311/2294));
-  }
+  .reinounido {width: calc(100% * (311/2294));background-position-y: 75%;animation: changeBg 45s infinite;}
   
   .fonte {
     text-align: right;
     font-size: 15px;
     text-transform: uppercase;
+  }
+
+  .animabg{animation: changeBg 45s infinite;}
+
+  @keyframes changeBg{
+     0%,100%  {background-position: 50% 0%;}
+     30% {background-position: 50% 25%;}
+     50% {background-position: 50% 50%;}
+     75% {background-position: 50% 75%;}
+     90% {background-position: 50% 100%;}
   }
   
 }
