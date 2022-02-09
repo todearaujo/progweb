@@ -1,6 +1,10 @@
 body{
   background-color: #EEEEEE;
   font-family: Arial;
+  display: flex;
+  margin: auto;
+  width: 95%;
+  height: 95%;
 }
 
 a {
@@ -17,32 +21,23 @@ a:hover{
   font-size: 10px;
   writing-mode: vertical-rl;
   position: absolute;
-  left: 3px;
-  bottom: 5px;
+  left: 10px;
+  bottom: 10px;
 }
 
-.conteudo{
-  background-color: #ffffff;
-  max-width: 600px;
-  margin: 5px auto;
-  padding: 20px;
-  position: relative;
-  box-shadow: 10px 10px 20px #cccccc;
-}
+.conteudo{display: flex;justify-content: center;align-items: center;flex-flow: row wrap;max-width: 95%;margin: 0 auto;}
 
 .menu {
   display: flex;
   flex-flow: row-reverse;
-  margin-top: 25px;
+  min-height: 10%;
 }
 
 .botao {
-  padding: 10px;
-  margin-left: 10px;
-  height: 12px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 .inativo {
@@ -54,23 +49,27 @@ a:hover{
 }
 
 .titulo{
-  font-size: 25px;
+  font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin: 10px;
   letter-spacing: -1.5px;
+  width: 100%;
+  text-align: right;
+  line-height: 40px;
 }
 
 .grafico {
   color: #ffffff;
   font-size: 10px;
-  width: 95%;
+  width: 90%;
+  max-height: 100%;
 }
 
 .barra {
   margin: 10px;
-  height: 35px;
+  height: 60px;
   border: solid 1px black;
   background-size: cover;
 }
@@ -79,6 +78,7 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  height: 12%;
 }
 
 .texto {
@@ -86,25 +86,131 @@ a:hover{
   width: 20px;
 }
 
-.eua {width: 100%;background-position-y: 46%;}
+.eua {width: 100%;background-position-y: 58%;}
 
-.china {width: calc(100% * (1686/2294));background-position-y: 36%;}
+.china {width: calc(100% * (1686/2294));background-position-y: 40%;}
 
-.japao {
-width: calc(100% * (510/2294));background-position-y: 15%;;
-}
+.japao {width: calc(100% * (510/2294));background-position-x: 5%;}
 
-.alemanha {
-width: calc(100% * (423/2294));
-}
+.alemanha {width: calc(100% * (423/2294));background-position-y: 50%;}
 
-.reinounido {
-width: calc(100% * (311/2294));
-}
+.reinounido {width: calc(100% * (311/2294));background-position-y: -50%;}
 
 .fonte {
-  text-align: right;
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
-  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+  body{
+    background-color: #EEEEEE;
+    font-family: Arial;
+    padding: 15px;
+  }
+  
+  a {
+    color: #999999;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: #0000FF;
+    text-decoration: none;
+  }
+  
+  .credito{
+    font-size: 14px;
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+  }
+  
+  .conteudo{
+    background-color: #ffffff;
+    width: 95%;
+    padding: 20px;
+    position: relative;
+    box-shadow: 10px 10px 20px #cccccc;
+    display: flex;
+  }
+  
+  .menu {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+  
+  .botao {
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  .inativo {
+    color: #0000CC20;
+  }
+  
+  .inativo:hover {
+    background-color: #EEEEEE;
+  }
+  
+  .titulo{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    letter-spacing: -1.5px;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+  }
+  
+  .grafico {
+    color: #ffffff;
+    font-size: 10px;
+    width: 90%;
+    max-height: 65%;
+  }
+  
+  .barra {
+    margin: 10px;
+    height: 60px;
+    border: solid 1px black;
+    background-size: cover;
+  }
+  
+  .pais {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 15%;
+  }
+  
+  .texto {
+    color: black;
+    width: 40px;
+    font-size: 20px;
+  }
+  
+  .eua {width: 100%;background-position-y: 29%;}
+  
+  .china {width: calc(100% * (1686/2294));background-position-y: 36%;}
+  
+  .japao {width: calc(100% * (510/2294));background-position-y: 0%;}
+  
+  .alemanha {width: calc(100% * (423/2294));background-position-y: 50%;}
+  
+  .reinounido {
+  width: calc(100% * (311/2294));
+  }
+  
+  .fonte {
+    text-align: right;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
 }

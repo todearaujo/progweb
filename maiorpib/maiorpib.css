@@ -1,6 +1,7 @@
-body{
-    background-color: #EEEEEE;
+  body{
+    background-color: #ffffff;
     font-family: Arial;
+    display: flex;
   }
 
   a {
@@ -14,34 +15,27 @@ body{
   }
 
   .credito{
-    font-size: 10px;
+    font-size: 12px;
     writing-mode: vertical-rl;
     position: absolute;
-    left: -5px;
-    bottom: 5px;
+    left: -3px;
+    bottom: 10px;
   }
   
   .conteudo{
-    background-color: #ffffff;
-    max-width: 600px;
-    margin: 5px auto;
-    padding: 20px;
-    position: relative;
-    box-shadow: 10px 10px 20px #cccccc;
-  }
-
-  .menu {
+    max-width: 95%;
+    margin: 11px auto;
     display: flex;
-    flex-flow: row-reverse;
-    margin-top: 25px;
+    vertical-align: middle;
+    justify-content: center;
+    flex-flow: row wrap;
+    max-height: 100%;
   }
 
   .botao {
     padding: 10px;
-    margin-left: 10px;
-    height: 12px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 40px;
     text-transform: uppercase;
   }
 
@@ -60,29 +54,29 @@ body{
     text-align: center;
     margin: 10px;
     letter-spacing: -1.5px;
+    height: 15%;
   }
   
   .grafico {
-    color: #ffffff;
-    font-size: 10px;
+    font-size: 14px;
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
-    width: 75%;
-    margin: auto;
-    max-height: 550px;
+    width: 90%;
+    max-height: 70%;
+    min-height: 50%;
 }
   
   .barra {
     margin: 5px 0;
     padding: 10px;
-    width: 16%;
+    width: 45%;
     border: solid 1px black;
     background-size: cover;
   }
 
   .pais {
-    width: 19%;
+    width: 20%;
     display: block;
   }
   
@@ -91,37 +85,148 @@ body{
   }
   
   .eua {
-    height: 458px;
+    height: 100%;
   }
   
   .china {
-    height: 336px;
+    height: calc(100% * (1686/2294));
   }
   
   .japao {
-    height: 102px;
+    height: calc(100% * (510/2294));
   }
   
   .alemanha {
-    height: 84px;
+    height: calc(100% * (423/2294));
   }
   
   .reinounido {
-    height: 62px;
+    height: calc(100% * (311/2294));
   }
 
   .animabg{ animation: changeBg 45s infinite;}
 @keyframes changeBg{
-   0%,100%  {background-position: 10% 50%;}
+   0%,100%  {background-position: 0% 50%;}
    20% {background-position: 30% 50%;}
-   40% {background-position: 60% 50%;}
-   60% {background-position: 70% 50%;}
-   80% {background-position: 80% 50%;}
+   40% {background-position: 40% 50%;}
+   60% {background-position: 50% 50%;}
+   80% {background-position: 75% 50%;}
 }
   
   .fonte {
-    text-align: right;
-    font-size: 8px;
+    text-align: center;
+    font-size: 11px;
     text-transform: uppercase;
     margin-top: 15px;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+
+    body{
+      background-color: #EEEEEE;
+      font-family: Arial;
+      margin: 20px;
+      display: flex;
+    }
+    
+    .credito{
+      font-size: 16px;
+      writing-mode: vertical-rl;
+      left: -5px;
+    }
+    
+    .conteudo{
+      background-color: #ffffff;
+      margin: 10px auto;
+      padding: 25px;
+      position: relative;
+      box-shadow: 5px 5px 10px #cccccc;
+      display: flex;
+      width: 70%;
+    }
+ 
+    .botao {
+      padding: 10px;
+      margin-left: 10px;
+      height: 12px;
+      font-weight: bold;
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+  
+    .inativo {
+      color: #0000CC20;
+    }
+  
+    .inativo:hover {
+      background-color: #EEEEEE;
+    }
+    
+    .titulo{
+      font-size: 35px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: right;
+      letter-spacing: -1.5px;
+      width: 95%;
+    }
+    
+    .grafico {
+      font-size: 15px;
+      width: 80%;
+  }
+    
+    .barra {
+      padding: 10px;
+      width: 50%;
+      border: solid 1px black;
+      background-size: cover;
+    }
+  
+    .pais {
+      width: 15%;
+      display: block;
+    }
+    
+    .texto {
+      color: black;
+    }
+    
+    .eua {
+      height: 100%;
+    }
+    
+    .china {
+      height: calc(100% * (1686/2294));
+    }
+    
+    .japao {
+      height: calc(100% * (510/2294));
+    }
+    
+    .alemanha {
+      height: calc(100% * (423/2294));
+    }
+    
+    .reinounido {
+      height: calc(100% * (311/2294));
+    }
+  
+    .animabg{ animation: changeBg 45s infinite;}
+  @keyframes changeBg{
+     0%,100%  {background-position: -1% 50%;}
+     30% {background-position: 35% 50%;}
+     50% {background-position: 50% 50%;}
+     75% {background-position: 75% 50%;}
+     90% {background-position: 100% 50%;}
+  }
+    
+    .fonte {
+      text-align: right;
+      font-size: 14px;
+      text-transform: uppercase;
+      width: 95%;
+    }
+    
   }
