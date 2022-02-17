@@ -124,9 +124,9 @@
 @keyframes changeBg{
   0%,100%  {background-position: 0% 50%;}
   20% {background-position: 40% 50%;}
-  50% {background-position: 50% 50%;}
-  75% {background-position: 60% 50%;}
-  80% {background-position: 70% 50%;}
+  50% {background-position: 55% 50%;}
+  75% {background-position: 70% 50%;}
+  80% {background-position: 75% 50%;}
 }
   
   .fonte {
