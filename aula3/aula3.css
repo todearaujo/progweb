@@ -6,7 +6,7 @@ body {
     height: auto;
     line-height: 1.42857143;
     font-size: 100%;
-    font-family: "Atlas Grotesk Web";
+    font-family: "Atlas Grotesk Web Regular";
 }
 
 @font-face {font-family: "Atlas Grotesk Web Regular";
@@ -43,19 +43,6 @@ a {
 
 .logo-container svg {
     width: 100%;
-}
-
-.lato {
-    font-family: 'Lato', sans-serif;
-    font-size: 48px;
-}
-
-.opensans {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.atlas {
-    font-family: "Atlas Grotesk Web Regular";
 }
 
 .cabecalho {
