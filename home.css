@@ -1,5 +1,5 @@
 body{
-    background-color: #CCCCCC;
+    background-color: #1b00ff;
     color: black;
     font-family: Arial;
     margin: 10px;
@@ -12,11 +12,13 @@ body{
 
   .corpo {
     background-color: #ffffff;
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    position: relative;
-    box-shadow: 5px 5px 10px #999999;
+    max-width: 550px;
+    padding: 5px;
+    box-shadow: 5px 50px 75px #00000050;
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 300px;
+    margin: 0 auto;
   }
 
   .titulo{
@@ -24,19 +26,33 @@ body{
     padding: 20px;
     font-size: 14px;
     text-align: left;
+    box-shadow: 5px 5px 75px #00000050;
+    line-height: 1.5em;
+    min-width: 300px;
+    margin: 15px auto 10px;
+    max-width: 600px;
+    z-index: 9999;
   }
    
   h1 {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+    color: blue;
+    line-height: 1.5em;
   }
 
   .conteudo{
-    display: flex;
     background-color: #ffffff;
-    padding: 20px;
     position: relative;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .aula {
+    width: 90%;
+    padding: 5px;
   }
 
   .descricao {
@@ -47,22 +63,24 @@ body{
 
   .menu {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding: 10px;
   }
 
   .botao {
     padding: 10px;
-    margin-right: 10px;
     height: 20px;
     background-color: #EEEEEE;
     font-weight: bold;
+    margin-bottom: 10px;
   }
 
   .botao:hover {
     padding: 10px;
-    margin-right: 10px;
     height: 20px;
-    background-color: #0000EE10;
+    background-color: #0000FF;
+    color: #FFFFFF;
     font-weight: bold;
   }
 
@@ -72,4 +90,18 @@ body{
 
   .inativo:hover {
     background-color: #EEEEEE;
+  }
+
+  .animabg{animation: changeBg 45s infinite;}
+
+  @keyframes changeBg{
+     0%,100%  {background-position: 50% 0%;}
+     30% {background-position: 50% 25%;}
+     50% {background-position: 50% 50%;}
+     75% {background-position: 50% 75%;}
+     90% {background-position: 50% 100%;}
+  }
+  
+  #pudding {
+    font-size: 12px;
   }

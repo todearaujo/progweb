@@ -1,3 +1,11 @@
+#tode {
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 11px;
+}
+
 @media only screen and (max-width: 540px) {
   body{
     background-color: #ffffff;
@@ -20,14 +28,6 @@
   a:hover{
     color: #0000FF;
     text-decoration: none;
-  }
-
-  .credito{
-    writing-mode: vertical-rl;
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    font-size: 12px;
   }
   
   .conteudo{

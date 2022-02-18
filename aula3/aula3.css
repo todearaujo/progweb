@@ -18,8 +18,17 @@ body {
     url("atlas.svg#Atlas Grotesk Web Regular") format("svg"); /* iOS 4.1- */
 }
 
+#tode {
+    font-size: 10px;
+    writing-mode: vertical-rl;
+    position: fixed;
+    bottom: 15px;
+    left: 10px;
+}
+
 a {
-    color: #000000;
+    color: #000;
+    text-decoration: none;
 }
 
 .logo-container {
@@ -56,8 +65,8 @@ a {
 }
 
 .autor {
-    font-size: 0.7em;
-    font-weight: 500;
+    font-size: 0.6em;
+    font-weight: bold;
     letter-spacing: 2px;
     margin: 0 0 10px 0;
 }
@@ -81,7 +90,7 @@ a {
 .divisor {
     border: 1px solid #C2C2C2;
     margin: 50px auto 40px auto;
-    width: 30%;
+    width: 20%;
     display: block;
 }
 
@@ -126,7 +135,7 @@ a {
 @media only screen and (min-width: 600px) {
     .linhafina {
         font-size: 0.9em;
-        font-weight: 500;
+        font-weight: bold;
         line-height: 1.6em;
         width: 400px;
         margin: 0 auto;
