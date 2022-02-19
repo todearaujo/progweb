@@ -1,8 +1,8 @@
 body{
-    background-color: #1b00ff;
+    background-color: black;
     color: black;
     font-family: Arial;
-    margin: 10px;
+    padding: 5px;
   }
 
   a {
@@ -14,11 +14,11 @@ body{
     background-color: #ffffff;
     max-width: 550px;
     padding: 5px;
-    box-shadow: 5px 50px 75px #00000050;
+    box-shadow: -10px 10px 0px #0000ff;
     display: flex;
     flex-flow: row wrap;
-    min-width: 300px;
-    margin: 0 auto;
+    min-width: 240px;
+    margin: 20px auto 10px;
   }
 
   .titulo{
@@ -26,10 +26,9 @@ body{
     padding: 20px;
     font-size: 14px;
     text-align: left;
-    box-shadow: 5px 5px 75px #00000050;
-    line-height: 1.5em;
-    min-width: 300px;
-    margin: 15px auto 10px;
+    box-shadow: 10px 10px 0px #0000ff;
+    min-width: 240px;
+    margin: 0 auto;
     max-width: 600px;
     z-index: 9999;
   }
@@ -53,6 +52,9 @@ body{
   .aula {
     width: 90%;
     padding: 5px;
+    border: black solid;
+    margin: 5px 0px;
+    padding: 10px;
   }
 
   .descricao {
@@ -74,6 +76,7 @@ body{
     background-color: #EEEEEE;
     font-weight: bold;
     margin-bottom: 10px;
+    box-shadow: 5px 5px 0px black;
   }
 
   .botao:hover {
@@ -95,11 +98,11 @@ body{
   .animabg{animation: changeBg 45s infinite;}
 
   @keyframes changeBg{
-     0%,100%  {background-position: 50% 0%;}
-     30% {background-position: 50% 25%;}
-     50% {background-position: 50% 50%;}
-     75% {background-position: 50% 75%;}
-     90% {background-position: 50% 100%;}
+     0%,100%  {background-position: 0% 0%;}
+     30% {background-position: 0% 25%;}
+     50% {background-position: 0% 50%;}
+     75% {background-position: 0% 75%;}
+     90% {background-position: 0% 100%;}
   }
   
   #pudding {
