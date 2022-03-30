@@ -1,3 +1,8 @@
+body{
+  font-family: Arial;
+  background-color: #EEEEEE;
+}
+
 #tode {
     writing-mode: vertical-rl;
     left: 0.4rem;
@@ -6,114 +11,240 @@
     align-self: end;
 }
 
-body{
-  font-family: Arial;
+@media (orientation: portrait) {
+
+  main{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100%;
+    justify-items: center;
+  }
+
+  .graficobox {
+    align-self: end;
+  }
+
+  a {
+    color: #999999;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #0000FF;
+    text-decoration: none;
+  }
+
+  .conteudo{
+    display: grid;
+    grid-template-rows: 1fr 2fr auto auto;
+    justify-items: center;
+  }
+
+  .menu {justify-self: right;}
+
+  .botao {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .titulo {
+    font-size: 8vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.5vh;
+    line-height: 0.85;
+    align-self: center;
+  }
+
+  .grafico {
+    display: flex;
+    flex-flow: row-reverse;
+    height: 50vh;
+    margin: auto;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .barra {
+    width: 5vh;
+    border: solid 1px black;
+    background-size: cover;
+  }
+
+  .pais {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    flex-basis: min-content;
+    padding: 1vh;
+    justify-content: center;
+  }
+
+  .texto {
+    font-size: 0.725rem;
+    text-align: center;
+    margin: 1vh auto;
+  }
+
+  .eua {
+    height: 100%;
+  }
+
+  .china {
+    height: calc(100% * (1686/2294));
+  }
+
+  .japao {
+    height: calc(100% * (510/2294));
+  }
+
+  .alemanha {
+    height: calc(100% * (423/2294));
+  }
+
+  .reinounido {
+    height: calc(100% * (311/2294));
+  }
+
+  .animabg{ animation: changeBg 45s infinite;}
+  @keyframes changeBg{
+  0%,100%  {background-position: 0% 50%;}
+  20% {background-position: 40% 50%;}
+  50% {background-position: 55% 50%;}
+  75% {background-position: 70% 50%;}
+  80% {background-position: 75% 50%;}
+  }
+
+  .fonte {
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
 }
 
-main{
-  display: grid;
-  grid-template-columns: auto 1fr;
-  height: 100%;
-  justify-items: center;
-}
+@media (orientation: landscape) {
 
-.graficobox {
-  align-self: end;
-}
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-a {
-  color: #999999;
-  text-decoration: none;
-}
+  main {
+    display: contents;
+  }
 
-a:hover{
-  color: #0000FF;
-  text-decoration: none;
-}
+  a {
+    color: #999999;
+    text-decoration: none;
+  }
 
-.conteudo{
-  display: grid;
-  grid-template-rows: 1fr 3fr auto auto;
-  justify-items: center;
-}
+  a:hover{
+    color: #0000FF;
+    text-decoration: none;
+  }
 
-.menu {justify-self: right;}
+  .credito{
+    font-size: 14px;
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+  }
 
-.botao {
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
+  .conteudo{
+    background-color: #ffffff;
+    width: 75%;
+    padding: 1.5vh;
+    position: relative;
+    box-shadow: 5px 5px 10px #cccccc;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-.titulo {
-  font-size: 8vh;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: -2;
-  line-height: 0.85;
-  align-self: center;
-}
+  .menu {
+    text-align: right;
+  }
 
-.grafico {
-  display: flex;
-  flex-flow: row-reverse;
-  height: 50vh;
-  margin: auto;
-  justify-content: center;
-}
+  .botao {
+    padding: 10px;
+    font-size: 3VW;
+  }
 
-.barra {
-  width: 6vh;
-  border: solid 1px black;
-  background-size: cover;
-}
+  .inativo {
+    color: #0000CC20;
+  }
 
-.pais {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: flex-end;
-  flex-basis: min-content;
-  padding: 1vh;
-  justify-content: center;
-}
+  .inativo:hover {
+    background-color: #EEEEEE;
+  }
 
-.texto {
-  font-size: 0.725rem;
-  text-align: center;
-  margin: 1vh auto;
-}
+  .titulo{
+    font-size: 2VW;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+    letter-spacing: -1.5px;
+  }
 
-.eua {
-  height: 100%;
-}
+  .grafico {
+    color: #ffffff;
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+  }
 
-.china {
-  height: calc(100% * (1686/2294));
-}
+  .barra {
+    margin: 10px;
+    height: 6VH;
+    border: solid 1px black;
+    background-size: cover;
+  }
 
-.japao {
-  height: calc(100% * (510/2294));
-}
+  .pais {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-flow: row-reverse;
+    height: 14vh;
+  }
 
-.alemanha {
-  height: calc(100% * (423/2294));
-}
+  .texto {
+    color: black;
+    width: 3vw;
+    font-size: 1.5vw;
+  }
 
-.reinounido {
-  height: calc(100% * (311/2294));
-}
+  .eua {max-width: 100%;background-position-y: 30%;animation: changeBg 45s infinite;width: 100%;}
 
-.animabg{ animation: changeBg 45s infinite;}
-@keyframes changeBg{
-0%,100%  {background-position: 0% 50%;}
-20% {background-position: 40% 50%;}
-50% {background-position: 55% 50%;}
-75% {background-position: 70% 50%;}
-80% {background-position: 75% 50%;}
-}
+  .china {width: calc(100% * (1686/2294));background-position-y: 35%;animation: changeBg 45s infinite;}
 
-.fonte {
-  text-transform: uppercase;
-  font-size: 0.5rem;
-  padding: 0.5rem;
-  text-align: center;
+  .japao {width: calc(100% * (510/2294));background-position-y: 0%;animation: changeBg 45s infinite;}
+
+  .alemanha {width: calc(100% * (423/2294));background-position-y: 50%;animation: changeBg 45s infinite;}
+
+  .reinounido {width: calc(100% * (311/2294));background-position-y: 75%;animation: changeBg 45s infinite;}
+
+  .fonte {
+    text-align: right;
+    font-size: 1vw;
+    text-transform: uppercase;
+    width: 80%;
+  }
+
+  #tode {font-size: 10px;writing-mode: vertical-rl;position: absolute;left: 5px;bottom: 5px;}
+    
+  .animabg{animation: changeBg 45s infinite;}
+
+  @keyframes changeBg{
+    0%,100%  {background-position: 50% 0%;}
+    30% {background-position: 50% 25%;}
+    50% {background-position: 50% 45%;}
+    75% {background-position: 50% 70%;}
+    90% {background-position: 50% 85%;}
+  }
 }

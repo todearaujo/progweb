@@ -2,9 +2,8 @@ body{
   background-color: #EEEEEE;
   font-family: Arial;
   display: flex;
-  margin: auto;
-  width: 95%;
-  height: 95%;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -18,25 +17,32 @@ a:hover{
 }
 
 .credito{
-  font-size: 10px;
+  font-size: 14px;
   writing-mode: vertical-rl;
   position: absolute;
-  left: 10px;
-  bottom: 10px;
+  left: 8px;
+  bottom: 8px;
 }
 
-.conteudo{display: flex;justify-content: center;align-items: center;flex-flow: row wrap;max-width: 95%;margin: 0 auto;}
+.conteudo{
+  background-color: #ffffff;
+  width: 75%;
+  padding: 1.5vh;
+  position: relative;
+  box-shadow: 5px 5px 10px #cccccc;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 .menu {
-  display: flex;
-  flex-flow: row-reverse;
+  text-align: right;
 }
 
 .botao {
-  font-weight: bold;
-  font-size: 30px;
-  text-transform: uppercase;
   padding: 10px;
+  font-size: 3VW;
 }
 
 .inativo {
@@ -48,27 +54,23 @@ a:hover{
 }
 
 .titulo{
-  font-size: 45px;
+  font-size: 2VW;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
   margin: 10px;
   letter-spacing: -1.5px;
-  width: 100%;
-  text-align: right;
-  line-height: 40px;
 }
 
 .grafico {
   color: #ffffff;
-  font-size: 10px;
-  width: 90%;
-  max-height: 100%;
+  width: 80%;
+  display: flex;
+  flex-flow: column;
 }
 
 .barra {
   margin: 10px;
-  height: 60px;
+  height: 6VH;
   border: solid 1px black;
   background-size: cover;
 }
@@ -77,288 +79,39 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 40%;
 }
 
 .texto {
   color: black;
-  width: 20px;
+  width: 3vw;
+  font-size: 1.5vw;
 }
 
-.eua {width: 100%;background-position-y: 58%;}
+.eua {max-width: 100%;background-position-y: 30%;animation: changeBg 45s infinite;width: 100%;}
 
-.china {width: calc(100% * (1686/2294));background-position-y: 40%;}
+.china {width: calc(100% * (1686/2294));background-position-y: 35%;animation: changeBg 45s infinite;}
 
-.japao {width: calc(100% * (510/2294));background-position-x: 5%;}
+.japao {width: calc(100% * (510/2294));background-position-y: 0%;animation: changeBg 45s infinite;}
 
-.alemanha {width: calc(100% * (423/2294));background-position-y: 50%;}
+.alemanha {width: calc(100% * (423/2294));background-position-y: 50%;animation: changeBg 45s infinite;}
 
-.reinounido {width: calc(100% * (311/2294));background-position-y: -50%;}
+.reinounido {width: calc(100% * (311/2294));background-position-y: 75%;animation: changeBg 45s infinite;}
 
 .fonte {
-  font-size: 10px;
+  text-align: right;
+  font-size: 1vw;
   text-transform: uppercase;
-  width: 100%;
-  text-align: center;
+  width: 90%;
 }
 
-@media only screen and (min-height: 360px) {
+#tode {font-size: 10px;writing-mode: vertical-rl;position: absolute;left: 5px;bottom: 5px;}
+  
+.animabg{animation: changeBg 45s infinite;}
 
-  body{
-    background-color: #FFFFFF;
-    font-family: Arial;
-    display: contents;
-    margin: auto;
-    max-height: 100%;
-    min-height: 360px;
-    min-width: 300px;
-    width: 95%;
-    max-width: 100%;
-  }
-  
-  a {
-    color: #999999;
-    text-decoration: none;
-  }
-  
-  a:hover{
-    color: #0000FF;
-    text-decoration: none;
-  }
-  
-  #tode{
-    font-size: 10px;
-    writing-mode: vertical-rl;
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-  }
-  
-  .conteudo{
-    background-color: #ffffff;
-    min-width: 360px;
-    position: initial;
-    display: flex;
-    flex-flow: wrap-reverse;
-    justify-content: center;
-    align-items: center;
-    max-width: 850px;
-    width: 95%;
-    max-height: 600px;
-    height: 100%;
-    margin: auto;
-  }
-  
-  .menu {
-    display: flex;
-    flex-flow: row-reverse;
-    height: 40px;
-    width: 100%;
-  }
-  
-  .botao {
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-  .inativo {
-    color: #0000CC20;
-  }
-  
-  .inativo:hover {
-    background-color: #EEEEEE;
-  }
-  
-  .titulo{
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: right;
-    letter-spacing: -1.5px;
-  }
-  
-  .grafico {
-    color: #ffffff;
-    font-size: 8px;
-    max-width: 100%;
-    display: flex;
-    flex-flow: column-reverse;
-    width: 800px;
-  }
-  
-  .barra {
-    height: 35px;
-    border: solid 1px black;
-    background-size: cover;
-  }
-  
-  .pais {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 50px;
-    min-height: 15%;
-    max-height: 20%;
-  }
-  
-  .texto {
-    color: black;
-    width: 30px;
-    font-size: 12px;
-  }
-  
-  .eua {max-width: 80%;background-position-y: 30%;animation: changeBg 45s infinite;}
-  
-  .china {width: calc(80% * (1686/2294));background-position-y: 35%;animation: changeBg 45s infinite;}
-  
-  .japao {width: calc(80% * (510/2294));background-position-y: 0%;animation: changeBg 45s infinite;}
-  
-  .alemanha {width: calc(80% * (423/2294));background-position-y: 50%;animation: changeBg 45s infinite;}
-  
-  .reinounido {width: calc(80% * (311/2294));background-position-y: 75%;animation: changeBg 45s infinite;}
-  
-  .fonte {
-    text-align: right;
-    font-size: 10px;
-    text-transform: uppercase;
-    margin-top: 10px;
-  }
-
-  .animabg{animation: changeBg 45s infinite;}
-
-  @keyframes changeBg{
-     0%,100%  {background-position: 50% 0%;}
-     30% {background-position: 50% 25%;}
-     50% {background-position: 50% 50%;}
-     75% {background-position: 50% 75%;}
-     90% {background-position: 50% 100%;}
-  }
-  
-}
-
-@media only screen and (min-width: 916px) {
-
-  body{
-    background-color: #EEEEEE;
-    font-family: Arial;
-    display: flex;
-    margin: auto;
-    height: 100%;
-    max-height: 100%;
-  }
-  
-  a {
-    color: #999999;
-    text-decoration: none;
-  }
-  
-  a:hover{
-    color: #0000FF;
-    text-decoration: none;
-  }
-  
-  .credito{
-    font-size: 14px;
-    writing-mode: vertical-rl;
-    position: absolute;
-    left: 8px;
-    bottom: 8px;
-  }
-  
-  .conteudo{
-    background-color: #ffffff;
-    width: 75%;
-    padding: 20px;
-    position: relative;
-    box-shadow: 10px 10px 20px #cccccc;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .menu {
-    display: flex;
-    flex-flow: row-reverse;
-  }
-  
-  .botao {
-    padding: 10px;
-    font-size: 30px;
-  }
-  
-  .inativo {
-    color: #0000CC20;
-  }
-  
-  .inativo:hover {
-    background-color: #EEEEEE;
-  }
-  
-  .titulo{
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px;
-    letter-spacing: -1.5px;
-    width: 100%;
-    height: 60px;
-    margin-top: 20px;
-  }
-  
-  .grafico {
-    color: #ffffff;
-    font-size: 10px;
-    width: 85%;
-    display: flex;
-    flex-flow: column;
-  }
-  
-  .barra {
-    margin: 10px;
-    height: 40px;
-    border: solid 1px black;
-    background-size: cover;
-  }
-  
-  .pais {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 12%;
-  }
-  
-  .texto {
-    color: black;
-    width: 40px;
-    font-size: 20px;
-  }
-  
-  .eua {max-width: 100%;background-position-y: 30%;animation: changeBg 45s infinite;width: 100%;}
-  
-  .china {width: calc(100% * (1686/2294));background-position-y: 35%;animation: changeBg 45s infinite;}
-  
-  .japao {width: calc(100% * (510/2294));background-position-y: 0%;animation: changeBg 45s infinite;}
-  
-  .alemanha {width: calc(100% * (423/2294));background-position-y: 50%;animation: changeBg 45s infinite;}
-  
-  .reinounido {width: calc(100% * (311/2294));background-position-y: 75%;animation: changeBg 45s infinite;}
-  
-  .fonte {
-    text-align: right;
-    font-size: 15px;
-    text-transform: uppercase;
-  }
-
-  .animabg{animation: changeBg 45s infinite;}
-
-  @keyframes changeBg{
-     0%,100%  {background-position: 50% 0%;}
-     30% {background-position: 50% 25%;}
-     50% {background-position: 50% 50%;}
-     75% {background-position: 50% 75%;}
-     90% {background-position: 50% 100%;}
-  }
-  
+@keyframes changeBg{
+  0%,100%  {background-position: 50% 0%;}
+  30% {background-position: 50% 25%;}
+  50% {background-position: 50% 45%;}
+  75% {background-position: 50% 70%;}
+  90% {background-position: 50% 85%;}
 }
