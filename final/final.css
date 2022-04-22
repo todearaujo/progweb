@@ -69,6 +69,12 @@ h2 {
     margin: 0;
 }
 
+.escala > p {
+    font-size: 0.625rem;
+    font-weight: bold;
+    width: 320px;
+}
+
 @media only screen and (min-width: 500px) {
     main {
         display: grid;
