@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+#tode {font-size: 10px;writing-mode: vertical-lr;position: fixed;right: 5px;top: 5px;}
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: blue;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -8,6 +22,10 @@ margin: 0;}
 
 #sec1 {
     margin: 25px;
+}
+
+#sec1 > div > p {
+    width: 320px;
 }
 
 #sec2 {
