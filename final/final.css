@@ -16,12 +16,12 @@ a:hover {
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     
 margin: 0;}
 
 #sec1 {
-    margin: 20px;
+    margin: 15px 20px;
 }
 
 #sec1 > div > p {
@@ -49,7 +49,7 @@ h1 {
     font-weight: normal;}
 
 h2 {
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin: 0;}
 
 .escala > .cor {
@@ -78,12 +78,12 @@ h2 {
 @media only screen and (min-width: 500px) {
     main {
         display: grid;
-        grid-template-columns: 500px 1fr;
+        grid-template-columns: 420px 1fr;
     }
 
     h1{
-        font-size: 2.5rem;
-        width: 450px;
+        font-size: 1.5rem;
+        width: 380px;
     }
     
     #sec1 > div {
